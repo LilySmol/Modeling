@@ -207,5 +207,44 @@ namespace Modeling
             }
             return resultTable;
         }
+
+        public int getCountIncrease(DataTable dataTable)
+        {
+            int count = 0;
+            for (int i = 1; i < dataTable.Rows.Count; i++)
+            {
+                if (Convert.ToDouble(dataTable.Rows[i][1]) > Convert.ToDouble(dataTable.Rows[i - 1][1]))
+                {
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        public int getCountFall(DataTable dataTable)
+        {
+            int count = 0;
+            for (int i = 1; i < dataTable.Rows.Count; i++)
+            {
+                if (Convert.ToDouble(dataTable.Rows[i][1]) < Convert.ToDouble(dataTable.Rows[i - 1][1]))
+                {
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        public int getCountStagnation(DataTable dataTable)
+        {
+            int count = 0;
+            for (int i = 1; i < dataTable.Rows.Count; i++)
+            {
+                if (Convert.ToDouble(dataTable.Rows[i][1]) == Convert.ToDouble(dataTable.Rows[i - 1][1]))
+                {
+                    count++;
+                }
+            }
+            return count;
+        }
     }
 }

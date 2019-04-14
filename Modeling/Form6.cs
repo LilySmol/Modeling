@@ -33,7 +33,7 @@ namespace Modeling
             dataTableResult.Rows.Add(dataTable.Rows.Count, (Convert.ToDouble(dataTable.Rows[dataTable.Rows.Count - 1][1]) + Convert.ToDouble(dataTable.Rows[dataTable.Rows.Count - 2][1])) / 2);
             DrawFirstGraph(getPointsFromDataTable(dataTableResult));
             DrawSecondGraph(getPointsFromDataTable(dataTable));
-            label3.Text = getMapeValue(dataTable, dataTableResult).ToString();
+            label3.Text = getMapeValue(dataTable, dataTableResult).ToString() + " %";
         }
 
         private PointPairList getPointsFromDataTable(DataTable inDataTable)
@@ -74,9 +74,9 @@ namespace Modeling
                 sum += Convert.ToDouble(mainTable.Rows[i][1]) - Convert.ToDouble(modelingTable.Rows[i][1]);
                 sumMainTable += Convert.ToDouble(mainTable.Rows[i][1]);
             }
-            double one = (double) 1 / mainTable.Rows.Count;
+            double one = (double) 100 / mainTable.Rows.Count;
             double two = Math.Abs(sum / sumMainTable);
-            return one * two * 100;
+            return one * two;
         }
     }
 }

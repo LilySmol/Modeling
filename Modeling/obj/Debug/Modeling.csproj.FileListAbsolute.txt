@@ -27,3 +27,9 @@ D:\VisualStudio\Modeling\Modeling\obj\Debug\Modeling.Form3.resources
 D:\VisualStudio\Modeling\Modeling\obj\Debug\Modeling.Form4.resources
 D:\VisualStudio\Modeling\Modeling\obj\Debug\Modeling.Form5.resources
 D:\VisualStudio\Modeling\Modeling\obj\Debug\Modeling.Form6.resources
+D:\VisualStudio\Modeling\Modeling\bin\Debug\Syncfusion.Compression.Base.dll
+D:\VisualStudio\Modeling\Modeling\bin\Debug\Syncfusion.Licensing.dll
+D:\VisualStudio\Modeling\Modeling\bin\Debug\Syncfusion.XlsIO.Base.dll
+D:\VisualStudio\Modeling\Modeling\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\VisualStudio\Modeling\Modeling\bin\Debug\Syncfusion.Compression.Base.xml
+D:\VisualStudio\Modeling\Modeling\bin\Debug\Syncfusion.XlsIO.Base.xml
